@@ -1,0 +1,125 @@
+body {
+  /* Explicitly declare the angle, in degrees */
+  background: linear-gradient(72deg, #000000, #434343);
+  background-size: cover;
+  /* height: 100%; */
+}
+
+.continerclass {
+  margin-top: 30vh;
+}
+.jumbotron {
+  -webkit-box-shadow: 10px 13px 25px 0px rgba(160, 155, 155, 0.75);
+  -moz-box-shadow: 10px 13px 25px 0px rgba(184, 179, 179, 0.75);
+  box-shadow: 10px 13px 25px 0px rgba(148, 142, 142, 0.75);
+}
+
+.h1tag {
+  font-size: 1.2em;
+  /* color: rgba(12, 5, 27, 0.699); */
+  color: rgb(10, 0, 0);
+  font-style: bold;
+  text-shadow: 0 4px 6px #130b0b, 0 0 8px #f4f4fa;
+  transition: color 1s;
+}
+
+@media (min-width: 544px) {
+  .h1tag {
+    font-size: 1.5em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 768px) {
+  .h1tag {
+    font-size: 2em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 992px) {
+  .h1tag {
+    font-size: 2.5em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 1200px) {
+  .h1tag {
+    font-size: 3em;
+  } /*1rem = 16px*/
+}
+
+.h2tag {
+  font-size: 1.2em;
+  /* color: rgba(12, 5, 27, 0.699); */
+  color: rgb(10, 0, 0);
+  font-style: bold;
+  text-align: center;
+  border-radius: 10%;
+  text-shadow: 0 4px 6px #130303, 0 0 8px #f4f4fa;
+  transition: color 1s;
+  -webkit-box-shadow: 10px 13px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 13px 25px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 544px) {
+  .h2tag {
+    font-size: 1.5em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 768px) {
+  .h2tag {
+    font-size: 2em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 992px) {
+  .h2tag {
+    font-size: 2.5em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 1200px) {
+  .htag {
+    font-size: 3em;
+  } /*1rem = 16px*/
+}
+
+.btntext {
+  font-size: 4vh;
+}
+#btns {
+  width: 60%;
+  background: linear-gradient(rgb(68, 137, 228), rgb(51, 235, 225));
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 13px 25px 0px rgba(160, 155, 155, 0.75);
+  -moz-box-shadow: 10px 13px 25px 0px rgba(184, 179, 179, 0.75);
+  box-shadow: 10px 13px 25px 0px rgba(148, 142, 142, 0.75);
+}
+#btns:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+
+  /* background-color: #4ed35f; */
+}
+
+.h1tagin {
+  font-size: 1.8em;
+  margin-top: 20%;
+}
+
+@media (min-width: 544px) {
+  .h1tagin {
+    font-size: 2.2em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 768px) {
+  .h1tagin {
+    font-size: 2.5em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 992px) {
+  .h1tagin {
+    font-size: 2.8em;
+  } /*1rem = 16px*/
+}
+@media (min-width: 1200px) {
+  .h1tagin {
+    font-size: 3em;
+  } /*1rem = 16px*/
+}

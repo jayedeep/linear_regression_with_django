@@ -1,0 +1,66 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container mt-5">
+  <div class="jumbotron text-center">
+    <div class="justify-content-center align-items-center mt-5">
+      <a
+        class="btn btn-primary"
+        data-toggle="collapse"
+        href="#collapseExample"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        know How To Predict
+      </a>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>
+            There is Link below,By Clicking on it You can Predict Your
+            Salary,Weight and Mile Per Gallon Of Car
+          </p>
+          <p>
+            <span style="font-weight: bold">Note:</span><br />
+            The Data for Predictions are based on Kaggle.com and some other
+            Websites and It is internation,Not based on Religion!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-center align-items-center mt-3"
+      title="Click On This"
+    >
+      <a href="{% url 'example' %}" style="text-decoration: none" class="h1tag">
+        Predict Your Weight
+      </a>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center mt-3"
+      title="Click On This"
+    >
+      <a
+        href="{% url 'example2' %}"
+        style="text-decoration: none"
+        class="h1tag"
+      >
+        Predict Your Mile Per Gallons
+      </a>
+    </div>
+    <div
+      class="d-flex justify-content-center align-items-center mt-3"
+      title="Click On This"
+    >
+      <a
+        href="{% url 'example3' %}"
+        style="text-decoration: none"
+        class="h1tag"
+      >
+        Predict Your Salary
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

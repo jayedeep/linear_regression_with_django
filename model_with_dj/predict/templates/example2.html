@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+
+<div class="d-flex justify-content-center mt-5">
+  <div class="container">
+    <div class="jumbotron m-5">
+      <h1 class="h1tag">Enter Your Inputs</h1>
+      <form action="" method="POST" class="mb-5">
+        {% csrf_token %} {{form|crispy}}
+
+        <button class="btn btn-success mb-3">Predict</button>
+        <a
+          class="ml-5 btn btn-primary"
+          data-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Know What is your Inputs..
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <p>
+              <span style="font-weight: bold">Cylinders:</span><br />
+              Every vehicle has cylinders, and the engine size is generally
+              denoted by how many cylinders a vehicle has. A 4 cylinder has 4, a
+              V6 has 6 and so on. Inside each cylinder is a piston, which moves
+              up and down. Gasoline and air combine inside the cylinder and a
+              spark creates combustion.
+            </p>
+            <p>
+              <span style="font-weight: bold">Displacement:</span><br />
+              Displacement has an impact on increasing car power or fuel
+              efficiency.
+            </p>
+            <p>
+              <span style="font-weight: bold">Horsepower:</span><br />
+              The power produced by an engine is called its horsepower. For
+              cars, horsepower translates into speed. So if you want to go
+              faster, and get up to speed quicker, you need more horsepower.
+            </p>
+            <p>
+              <span style="font-weight: bold">Weight:</span><br />
+              A vehicle's weight is an important factor in how much fuel it will
+              consume.
+            </p>
+            <p>
+              <span style="font-weight: bold">Acceleration:</span><br />
+              A car's acceleration is calculated when the car is not in motion
+              (0 mph), Acceleration is necessary when avoiding a crash.
+            </p>
+            <p>
+              <span style="font-weight: bold">Model year:</span><br />
+              The model year (sometimes abbreviated "MY") is a method of
+              describing the version of a product which has been produced over
+              multiple years
+            </p>
+            <p>
+              <span style="font-weight: bold">Origin:</span><br />
+              the brand of the cars looks like 1 is a car made in america, 2 in
+              europe and 3 in asia or other part of the world
+            </p>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="{%url 'home' %}" id="btns" class="btn btn-success">
+          <span class="btntext">GO Home!</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

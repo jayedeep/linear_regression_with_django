@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container continerclass">
+  <div class="jumbotron">
+    <h1 class="h1tag">Your Miles Per Gallon:</h1>
+    <div class="h2tag">{{weight}} Mpg</div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <a href="{%url 'example2' %}" id="btns" class="btn btn-success">
+      <span class="btntext">GO Back!</span>
+    </a>
+  </div>
+</div>
+
+{% endblock content %}
